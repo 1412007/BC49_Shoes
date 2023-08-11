@@ -73,6 +73,7 @@ header .header_content .icon_menu .price {
 .banner .banner_content .carousel-item:nth-child(2) .carousel_content img {
   transform: scale(0.7);
   margin: 0 auto;
+  width: 90%;
 }
 .banner .banner_content .carousel-item .carousel_content {
   position: relative;
@@ -135,6 +136,7 @@ header .header_content .icon_menu .price {
   background-color: #ff7f00;
   color: #fff;
   font-size: 20px;
+  transition: all 0.5s;
   font-weight: bold;
 }
 .banner .banner_content .carousel-item .carousel_content .add_cart .btn_add_cart:hover {
@@ -165,6 +167,7 @@ header .header_content .icon_menu .price {
   background-color: #ff7f00;
   color: #fff;
   font-size: 20px;
+  transition: all 0.5s;
   margin-bottom: 50px;
 }
 .collection .collection_content button:hover {
@@ -172,4 +175,291 @@ header .header_content .icon_menu .price {
 }
 .collection .collection_content .content_right {
   padding: 40px 0 40px 15px;
+}
+
+.new_arrival .new_arrival_content {
+  padding: 50px 0;
+  text-align: center;
+}
+.new_arrival .new_arrival_content .subtitle {
+  color: #111111;
+  font-size: 20px;
+  font-weight: unset;
+}
+.new_arrival .new_arrival_content .title {
+  color: #111111;
+  font-size: 60px;
+  font-weight: 600;
+}
+.new_arrival .new_arrival_content button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff7f00;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.new_arrival .new_arrival_content button:hover {
+  color: #111111;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item img {
+  width: 100%;
+  transform: scale(0.9);
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item a {
+  color: #111111;
+  font-size: 18px;
+  font-weight: unset;
+  text-decoration: none;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item a:hover {
+  color: #ff7f00;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item p {
+  color: #ff7f00;
+  font-size: 22px;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item .product_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item .product_icon .new_tag {
+  background-color: #ff5b72;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item .product_icon .icon {
+  display: flex;
+  flex-direction: column;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item .product_icon .icon i {
+  transform: translateX(55px);
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item .product_icon .icon i:hover {
+  color: #ff7f00;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item:hover .product_icon .icon i:first-child {
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item:hover .product_icon .icon i:nth-child(2) {
+  transform: translateX(0);
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+.new_arrival .new_arrival_content .new_arrival_product .product_item:hover .product_icon .icon i:last-child {
+  transform: translateX(0);
+  transition: all 0.5s;
+  transition-delay: 0.4s;
+}
+
+.background {
+  background-image: url("../../asset/img/New-Project-8-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background .limited .limited_content {
+  padding-top: 150px;
+}
+.background .limited .limited_content .limited_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 610px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.background .limited .limited_content .limited_title .subtitle {
+  color: #111111;
+  font-size: 20px;
+  font-weight: unset;
+}
+.background .limited .limited_content .limited_title .title {
+  color: #111111;
+  font-size: 60px;
+  font-weight: 600;
+}
+.background .limited .limited_content .limited_title button {
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff7f00;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.background .limited .limited_content .limited_title button:hover {
+  color: #111111;
+}
+.background .about_us {
+  margin-top: 150px;
+}
+.background .about_us .about_content .about_img {
+  padding: 0;
+}
+.background .about_us .about_content .about_img img {
+  width: 100%;
+}
+.background .about_us .about_content .about_title {
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.background .about_us .about_content .about_title .title_content {
+  padding: 0 30px;
+}
+.background .about_us .about_content .about_title .title {
+  color: #111111;
+  font-size: 60px;
+  font-weight: 600;
+}
+.background .about_us .about_content .about_title .description {
+  color: #111111;
+  font-size: 18px;
+  font-weight: unset;
+}
+.background .about_us .about_content .about_title button {
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff7f00;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.background .about_us .about_content .about_title button:hover {
+  color: #111111;
+}
+
+.brands {
+  margin: 70px 0;
+}
+.brands .container {
+  padding: 0;
+}
+.brands .brand_content {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 60px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 30px;
+}
+.brands .brand_content .brand_title {
+  text-align: center;
+  grid-row: 1/span 2;
+  align-self: center;
+}
+.brands .brand_content .brand_title .subtitle {
+  color: #111111;
+  font-size: 20px;
+  font-weight: unset;
+}
+.brands .brand_content .brand_title .title {
+  color: #111111;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.popular .popular_content {
+  text-align: center;
+}
+.popular .popular_content .subtitle {
+  color: #111111;
+  font-size: 20px;
+  font-weight: unset;
+}
+.popular .popular_content .title {
+  color: #111111;
+  font-size: 60px;
+  font-weight: 600;
+}
+.popular .popular_content .popular_product .product_item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.popular .popular_content .popular_product .product_item img {
+  width: 100%;
+  transform: scale(0.9);
+}
+.popular .popular_content .popular_product .product_item a {
+  color: #111111;
+  font-size: 18px;
+  font-weight: unset;
+  text-decoration: none;
+}
+.popular .popular_content .popular_product .product_item a:hover {
+  color: #ff7f00;
+}
+.popular .popular_content .popular_product .product_item p {
+  color: #ff7f00;
+  font-size: 22px;
+}
+.popular .popular_content .popular_product .product_item .product_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+}
+.popular .popular_content .popular_product .product_item .product_icon .new_tag {
+  background-color: #ff5b72;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.popular .popular_content .popular_product .product_item .product_icon .icon {
+  display: flex;
+  flex-direction: column;
+}
+.popular .popular_content .popular_product .product_item .product_icon .icon i {
+  transform: translateX(55px);
+}
+.popular .popular_content .popular_product .product_item .product_icon .icon i:hover {
+  color: #ff7f00;
+}
+.popular .popular_content .popular_product .product_item:hover .product_icon .icon i:first-child {
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.popular .popular_content .popular_product .product_item:hover .product_icon .icon i:nth-child(2) {
+  transform: translateX(0);
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+.popular .popular_content .popular_product .product_item:hover .product_icon .icon i:last-child {
+  transform: translateX(0);
+  transition: all 0.5s;
+  transition-delay: 0.4s;
 }/*# sourceMappingURL=style.css.map */
