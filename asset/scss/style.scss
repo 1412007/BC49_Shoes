@@ -251,7 +251,6 @@ header {
           top: 0;
           left: 0;
           right: 0;
-          bottom: 0;
           display: flex;
           justify-content: space-between;
           padding: 15px 15px 0 15px;
@@ -287,12 +286,12 @@ header {
                 &:nth-child(2) {
                   transform: translateX(0);
                   transition: all 0.5s;
-                  transition-delay: 0.2s;
+                  transition-delay: 0.1s;
                 }
                 &:last-child {
                   transform: translateX(0);
                   transition: all 0.5s;
-                  transition-delay: 0.4s;
+                  transition-delay: 0.2s;
                 }
               }
             }
@@ -426,7 +425,6 @@ header {
           top: 0;
           left: 0;
           right: 0;
-          bottom: 0;
           display: flex;
           justify-content: space-between;
           padding: 15px 15px 0 15px;
@@ -462,12 +460,12 @@ header {
                 &:nth-child(2) {
                   transform: translateX(0);
                   transition: all 0.5s;
-                  transition-delay: 0.2s;
+                  transition-delay: 0.1s;
                 }
                 &:last-child {
                   transform: translateX(0);
                   transition: all 0.5s;
-                  transition-delay: 0.4s;
+                  transition-delay: 0.2s;
                 }
               }
             }
@@ -476,4 +474,139 @@ header {
       }
     }
   }
+}
+
+footer {
+  margin-top: 70px;
+  background-color: #202020;
+  color: white;
+  .footer_content {
+    padding: 50px 0;
+    p {
+      margin-top: 16px;
+      font-size: 18px;
+    }
+    .social_icon {
+      a {
+        color: black;
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #e8d5d0;
+        text-align: center;
+        line-height: 50px;
+        font-size: $fs-18;
+        position: relative;
+        z-index: 1;
+        &:hover {
+          &::after {
+            box-shadow: inset 0 0 0 1px $color-orange;
+            transform: scale3d(1, 1, 1);
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          z-index: -1;
+          box-shadow: inset 0 0 0 35px white;
+          transform: scale3d(0.9, 0.9, 1);
+          transition: box-shadow 0.3s, transform 0.3s;
+        }
+      }
+    }
+    h4 {
+      position: relative;
+      height: fit-content;
+      padding-left: 15px;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 3px;
+        display: block;
+        background-color: $color-orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+      li {
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: $fs-18;
+          transition: all 0.5s;
+          &:hover {
+            color: $color-orange;
+          }
+          span {
+            font-size: 14px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: black;
+    .copyright_content {
+      height: 50px;
+      align-items: center;
+      font-size: $fs-18;
+      .copyright_right {
+        text-align: right;
+        a {
+          margin-left: 15px;
+          text-decoration: none;
+          font-size: $fs-18;
+          color: white;
+          &:hover {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+.backToTop {
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color-orange;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  font-size: $fs-18;
+  transition: all 0.5s;
+  border: 2px solid $color-orange;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  &:hover {
+    opacity: 1;
+    color: $color-orange;
+    background-color: white;
+    border: 2px solid $color-orange;
+  }
+}
+
+.cd-top--is-visible {
+  opacity: 1;
+  visibility: visible;
 }

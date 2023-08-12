@@ -334,6 +334,158 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer_content row">
+          <div class="col-3">
+            <a href="./index.html"
+              ><img
+                src="./asset/img/sized-logo-white-01.png"
+                alt="sized-logo-white-01"
+            /></a>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+            </p>
+            <div class="social_icon">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.google.com/"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.youtube.com/"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-3">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Our
+                  Company</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span>
+                  History</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span>
+                  Contact</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Jobs</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Store
+                  Locations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>Our Store</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Athletic
+                  Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Ballet
+                  Flats</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Boat
+                  Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Brogue
+                  Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Sneaker
+                  Store</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Privacy
+                  Policy</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span>
+                  Returns</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Terms &
+                  Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Contact
+                  Us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-caret-right"></i></span> Latest
+                  News</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright_content row">
+            <div class="col-6 copyright_left">
+              Copyright © 2022 Shoe Store. All Right Reserved.
+            </div>
+            <div class="col-6 copyright_right">
+              <a href="#">Legal Information</a>
+              <a href="#">Privacy policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -346,6 +498,13 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
@@ -353,7 +512,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Back to top -->
+    <script src="./asset/js/backToTop/main.js"></script>
+    <script src="./asset/js/backToTop/util.js"></script>
     <!-- Javascript -->
     <script src="./index.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("body").tooltip({ selector: "[data-toggle=tooltip]" });
+      });
+    </script>
   </body>
 </html>

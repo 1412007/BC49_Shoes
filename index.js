@@ -64,9 +64,9 @@ function renderUI(arrProduct, length) {
                     : '<div class="new_tag" style="background-color:white"></div>'
                 }
                 <div class="icon">
-                    <i class="fa-solid fa-cart-shopping btn"></i>
-                    <i class="fa-regular fa-heart btn"></i>
-                    <i class="fa-solid fa-magnifying-glass btn"></i>
+                    <i class="fa-solid fa-cart-shopping btn" data-toggle="tooltip" data-placement="top" title="Cart"></i>
+                    <i class="fa-regular fa-heart btn" data-toggle="tooltip" data-placement="top" title="Wishlist"></i>
+                    <i class="fa-solid fa-magnifying-glass btn" data-toggle="tooltip" data-placement="top" title="View"></i>
                 </div>
             </div>
             <h4><a href="#">${product.name}</a></h4>
