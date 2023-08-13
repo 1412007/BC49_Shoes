@@ -50,6 +50,14 @@ $fs-20: 20px;
   font-weight: $fontWeight;
 }
 
+@keyframes identifier {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 550px;
+  }
+}
 // style
 header {
   position: absolute;
@@ -155,8 +163,11 @@ header {
           color: $title-color;
           letter-spacing: 3px;
           position: absolute;
-          left: 0;
-          bottom: 180px;
+          // bottom: 180px;
+          animation-name: identifier;
+          animation-delay: 3s;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
           width: 100%;
           i {
             font-size: 16px;
@@ -303,7 +314,7 @@ header {
 }
 
 .background {
-  background-image: url("../../asset/img/New-Project-8-2.jpg");
+  background-image: url(../../asset/img/New-Project-8-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

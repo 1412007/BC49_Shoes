@@ -5,6 +5,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@keyframes identifier {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 550px;
+  }
+}
 header {
   position: absolute;
   z-index: 999999;
@@ -104,8 +112,10 @@ header .header_content .icon_menu .price {
   color: #111111;
   letter-spacing: 3px;
   position: absolute;
-  left: 0;
-  bottom: 180px;
+  animation-name: identifier;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   width: 100%;
 }
 .banner .banner_content .carousel-item .carousel_content .vendor i {
@@ -270,7 +280,7 @@ header .header_content .icon_menu .price {
 }
 
 .background {
-  background-image: url("../../asset/img/New-Project-8-2.jpg");
+  background-image: url(../../asset/img/New-Project-8-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

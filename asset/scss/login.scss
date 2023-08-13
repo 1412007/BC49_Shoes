@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #bce5ec, #e9d5cf);
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 215px 0;
+}
+
+.login_content {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  height: 500px;
+  overflow: hidden;
+  .welcome {
+    background-image: url(../../asset/img/best-running-shoe-brands-.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+    overflow: hidden;
+    button {
+      color: #ff7f00;
+      font-weight: bold;
+      &.active {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+        padding: 10px 30px;
+        transform: translateX(20px);
+        border: none;
+      }
+    }
+  }
+  .user_login {
+    padding: 60px 70px;
+    background-color: white;
+    .logo {
+      text-align: center;
+    }
+    form {
+      .input-group {
+        .input-group-text {
+          padding: 0.75rem;
+          background-color: transparent;
+          border-radius: 0;
+          border-bottom: 1px solid gray;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+      }
+      input {
+        border-bottom: 1px solid gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        &.form-control {
+          background-color: transparent;
+          border-radius: 0;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      button {
+        padding: 10px 50px;
+        border-radius: 25px;
+        border: none;
+        background-color: #ff7f00;
+        color: white;
+        font-size: 20px;
+        &:hover {
+          color: #111111;
+          background-color: #ff7f00;
+        }
+        transition: all 0.5s;
+      }
+      .forgot {
+        text-align: right;
+        a {
+          color: #111111;
+          text-decoration: none;
+          transition: all 0.5s;
+          &:hover {
+            color: #ff7f00;
+          }
+        }
+      }
+    }
+    .social_account {
+      p {
+        color: #111111;
+      }
+      button {
+        margin-right: 5px;
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 14px;
+        color: white;
+        border: none;
+        &:first-child {
+          background-color: #1877f2;
+        }
+        &:nth-child(2) {
+          background-color: #1da1f2;
+        }
+        &:last-child {
+          background-color: #d8513b;
+        }
+      }
+    }
+    #error {
+      color: red;
+    }
+  }
+}

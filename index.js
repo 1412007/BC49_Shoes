@@ -20,7 +20,6 @@ function getNewProduct() {
     url: "https://shop.cyberlearn.vn/api/Product",
   })
     .then(function (result) {
-      console.log(result);
       document.getElementById("newProduct").innerHTML = renderUI(
         result.data.content,
         4
@@ -38,7 +37,6 @@ function getPopularProduct() {
     url: "https://shop.cyberlearn.vn/api/Product",
   })
     .then(function (result) {
-      console.log(result);
       document.getElementById("popularProduct").innerHTML = renderUI(
         result.data.content,
         8

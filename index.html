@@ -31,6 +31,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -143,19 +151,25 @@
               ></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="10000">
                 <div class="carousel_content">
-                  <h1 class="carousel_title">CONVERSE RUN STAR</h1>
+                  <h1
+                    class="carousel_title animate__animated animate__zoomIn animate__delay-2s"
+                  >
+                    CONVERSE RUN STAR
+                  </h1>
                   <h3 class="vendor">
                     CONVERSE RUN STAR
                     <span><i class="fa-solid fa-chevron-right"></i></span>
                   </h3>
                   <img
                     src="./asset/img/banner_shoes1.png"
-                    class="d-block w-100"
+                    class="d-block w-100 animate__animated animate__zoomIn animate__delay-1s"
                     alt="banner_shoes1"
                   />
-                  <div class="add_cart">
+                  <div
+                    class="add_cart animate__animated animate__fadeInRight animate__delay-4s"
+                  >
                     <h4 class="cart_product_id">UK 8</h4>
                     <h2 class="cart_product_price">
                       <span><i class="fa-solid fa-euro-sign me-3"></i></span>94
@@ -167,19 +181,25 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="10000">
                 <div class="carousel_content">
-                  <h1 class="carousel_title">WILLINGTON BOOTS</h1>
+                  <h1
+                    class="carousel_title animate__animated animate__zoomIn animate__delay-2s"
+                  >
+                    WILLINGTON BOOTS
+                  </h1>
                   <h3 class="vendor">
                     WILLINGTON BOOTS
                     <span><i class="fa-solid fa-chevron-right"></i></span>
                   </h3>
                   <img
                     src="./asset/img/banner_shoes2.png"
-                    class="d-block"
+                    class="d-block animate__animated animate__zoomIn animate__delay-1s"
                     alt="banner_shoes2"
                   />
-                  <div class="add_cart">
+                  <div
+                    class="add_cart animate__animated animate__fadeInRight animate__delay-4s"
+                  >
                     <h4 class="cart_product_id">UK 8</h4>
                     <h2 class="cart_product_price">
                       <span><i class="fa-solid fa-euro-sign me-3"></i></span>115
@@ -191,19 +211,25 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="10000">
                 <div class="carousel_content">
-                  <h1 class="carousel_title">CONVERSE RUN STAR</h1>
+                  <h1
+                    class="carousel_title animate__animated animate__zoomIn animate__delay-2s"
+                  >
+                    CONVERSE RUN STAR
+                  </h1>
                   <h3 class="vendor">
                     CONVERSE RUN STAR
                     <span><i class="fa-solid fa-chevron-right"></i></span>
                   </h3>
                   <img
                     src="./asset/img/banner_shoes3.png"
-                    class="d-block w-100"
+                    class="d-block w-100 animate__animated animate__zoomIn animate__delay-1s"
                     alt="banner_shoes3"
                   />
-                  <div class="add_cart">
+                  <div
+                    class="add_cart animate__animated animate__fadeInRight animate__delay-4s"
+                  >
                     <h4 class="cart_product_id">UK 8</h4>
                     <h2 class="cart_product_price">
                       <span><i class="fa-solid fa-euro-sign me-3"></i></span>94
@@ -224,10 +250,26 @@
     <section class="collection">
       <div class="container">
         <div class="collection_content row">
-          <div class="col-6">
+          <div
+            class="col-6 wow animate__ animate__ animate__fadeInLeft animated animated"
+            data-wow-duration="2s"
+            style="
+              visibility: visible;
+              animation-duration: 2s;
+              animation-name: fadeInLeft;
+            "
+          >
             <img src="./asset/img/New-Project-5.jpg" alt="New-Project-5" />
           </div>
-          <div class="col-6 content_right">
+          <div
+            class="col-6 content_right wow animate__ animate__ animate__fadeInRight animated animated"
+            data-wow-duration="2s"
+            style="
+              visibility: visible;
+              animation-duration: 2s;
+              animation-name: fadeInRight;
+            "
+          >
             <p class="subtitle mb-0">REINVENTION IN FULL FORCE</p>
             <h2 class="title">RS-FASTED</h2>
             <button>Shop Collection</button>
@@ -239,7 +281,15 @@
     <!-- new arrival -->
     <section class="new_arrival">
       <div class="container">
-        <div class="new_arrival_content row">
+        <div
+          class="new_arrival_content row wow animate__ animate__fadeInUp animated animated"
+          data-wow-duration="2s"
+          style="
+            visibility: visible;
+            animation-duration: 2s;
+            animation-name: fadeInUp;
+          "
+        >
           <p class="subtitle mb-0">On Sale Product</p>
           <h2 class="title mb-3">New Arrivals</h2>
           <div class="new_arrival_product row" id="newProduct"></div>
@@ -253,7 +303,15 @@
       <!-- limited -->
       <section class="limited">
         <div class="container">
-          <div class="limited_content row">
+          <div
+            class="limited_content row wow animate__ animate__fadeInUp animated animated"
+            data-wow-duration="2s"
+            style="
+              visibility: visible;
+              animation-duration: 2s;
+              animation-name: fadeInUp;
+            "
+          >
             <div class="col-6 limited_title">
               <p class="subtitle mb-0">LIMITED TIME OFFER</p>
               <h2 class="title mb-3">NEW 2022 COLLECTION</h2>
@@ -267,7 +325,15 @@
       <!-- about us -->
       <section class="about_us">
         <div class="container">
-          <div class="about_content row">
+          <div
+            class="about_content row wow animate__ animate__fadeInUp animated animated"
+            data-wow-duration="2s"
+            style="
+              visibility: visible;
+              animation-duration: 2s;
+              animation-name: fadeInUp;
+            "
+          >
             <div class="about_img col-5">
               <img src="./asset/img/New-Project-13.jpg" alt="New-Project-13" />
             </div>
@@ -292,7 +358,15 @@
     <!-- brands -->
     <section class="brands">
       <div class="container">
-        <div class="brand_content">
+        <div
+          class="brand_content wow animate__ animate__fadeInUp animated animated"
+          data-wow-duration="2s"
+          style="
+            visibility: visible;
+            animation-duration: 2s;
+            animation-name: fadeInUp;
+          "
+        >
           <div class="brand_title">
             <p class="subtitle mb-0">HIGH QUALITY PRODUCTS.</p>
             <h2 class="title">Brands</h2>
@@ -327,7 +401,15 @@
     <!-- popular -->
     <section class="popular">
       <div class="container">
-        <div class="popular_content row">
+        <div
+          class="popular_content row wow animate__ animate__fadeInUp animated animated"
+          data-wow-duration="2s"
+          style="
+            visibility: visible;
+            animation-duration: 2s;
+            animation-name: fadeInUp;
+          "
+        >
           <p class="subtitle mb-0">Ballet Flats</p>
           <h2 class="title mb-3">Popular This Week</h2>
           <div class="popular_product row" id="popularProduct"></div>
@@ -486,6 +568,13 @@
     <a href="#" class="backToTop cd-top text-replace js-cd-top"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -498,13 +587,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <!-- Jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <!-- Axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
@@ -515,6 +597,11 @@
     <!-- Back to top -->
     <script src="./asset/js/backToTop/main.js"></script>
     <script src="./asset/js/backToTop/util.js"></script>
+    <!-- Wow -->
+    <script src="./asset/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- Javascript -->
     <script src="./index.js"></script>
     <script>
