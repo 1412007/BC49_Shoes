@@ -5,13 +5,49 @@
   font-family: "Montserrat", sans-serif;
 }
 
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+
+@mixin Responsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (min-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (min-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  }
+}
+
 body {
   background-image: linear-gradient(to bottom right, #bce5ec, #e9d5cf);
   background-repeat: no-repeat;
+  @include Responsive(XS) {
+    background-size: cover;
+  }
 }
 
 .container {
-  padding: 215px 0;
+  // padding: 215px 0;
+  // @include Responsive(XS) {
+  //   padding: 85px 0;
+  // }
+  height: 100vh;
 }
 
 .login_content {
@@ -19,6 +55,12 @@ body {
   border-radius: 20px;
   height: 500px;
   overflow: hidden;
+  transform: translateY(40%);
+  @include Responsive(XS) {
+    width: 90%;
+    margin: 0 auto;
+    transform: translateY(30%);
+  }
   .welcome {
     background-image: url(../../asset/img/best-running-shoe-brands-.png);
     background-size: cover;
@@ -40,6 +82,9 @@ body {
         transform: translateX(20px);
         border: none;
       }
+    }
+    @include Responsive(XS) {
+      display: none;
     }
   }
   .user_login {
@@ -124,6 +169,46 @@ body {
     }
     #error {
       color: red;
+    }
+    .signup_link {
+      a {
+        text-decoration: none;
+        color: #111111;
+        display: none;
+        &:hover {
+          color: #ff7f00;
+        }
+      }
+    }
+    @include Responsive(XS) {
+      width: 100%;
+      padding: 40px;
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+      form {
+        button {
+          padding: 10px 20px;
+          font-size: 18px;
+        }
+        .forgot {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+      .social_account {
+        p {
+          font-size: 16px;
+        }
+      }
+      .signup_link {
+        a {
+          display: block;
+        }
+      }
     }
   }
 }

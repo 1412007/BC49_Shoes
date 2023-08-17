@@ -9,9 +9,14 @@ body {
   background-image: linear-gradient(to bottom right, #bce5ec, #e9d5cf);
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 576px) {
+  body {
+    background-size: cover;
+  }
+}
 
 .container {
-  padding: 215px 0;
+  height: 100vh;
 }
 
 .login_content {
@@ -19,6 +24,14 @@ body {
   border-radius: 20px;
   height: 500px;
   overflow: hidden;
+  transform: translateY(40%);
+}
+@media only screen and (max-width: 576px) {
+  .login_content {
+    width: 90%;
+    margin: 0 auto;
+    transform: translateY(30%);
+  }
 }
 .login_content .welcome {
   background-image: url(../../asset/img/best-running-shoe-brands-.png);
@@ -42,6 +55,11 @@ body {
   padding: 10px 30px;
   transform: translateX(20px);
   border: none;
+}
+@media only screen and (max-width: 576px) {
+  .login_content .welcome {
+    display: none;
+  }
 }
 .login_content .user_login {
   padding: 60px 70px;
@@ -120,4 +138,34 @@ body {
 }
 .login_content .user_login #error {
   color: red;
+}
+.login_content .user_login .signup_link a {
+  text-decoration: none;
+  color: #111111;
+  display: none;
+}
+.login_content .user_login .signup_link a:hover {
+  color: #ff7f00;
+}
+@media only screen and (max-width: 576px) {
+  .login_content .user_login {
+    width: 100%;
+    padding: 40px;
+  }
+  .login_content .user_login .logo img {
+    width: 100%;
+  }
+  .login_content .user_login form button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .login_content .user_login form .forgot a {
+    font-size: 16px;
+  }
+  .login_content .user_login .social_account p {
+    font-size: 16px;
+  }
+  .login_content .user_login .signup_link a {
+    display: block;
+  }
 }/*# sourceMappingURL=login.css.map */
