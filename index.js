@@ -67,7 +67,7 @@ function renderUI(arrProduct, length) {
                     <i class="fa-solid fa-magnifying-glass btn" data-toggle="tooltip" data-placement="top" title="View"></i>
                 </div>
             </div>
-            <h4><a href="#">${product.name}</a></h4>
+            <h4><a href="./detailPage/view/detail.html?productId=${product.id}">${product.name}</a></h4>
             <p>$${product.price}</p>
         </div>
         `;

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shoes Store</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./../../css/style.css" />
+  <link rel="stylesheet" href="./../../css/detail.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header_content">
+        <div class="logo">
+          <a class="navbar-brand" href="./../../index.html">
+            <img src="./../../asset/img/sized-logo-01.png" alt="sized-logo-01" />
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Athletic shoes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Faq's</a></li>
+                    <li><a class="dropdown-item" href="#">My account</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="icon_menu row">
+          <i class="fa-solid fa-magnifying-glass col-4 btn"></i>
+          <i class="fa-solid fa-cart-shopping col-4 btn"></i>
+          <p class="price col-4">$0.00</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- banner -->
+  <section id="page-info" class="bs-dark">
+    <div class="container">
+      <div class="page-info-content">
+        <h1>Product Details</h1>
+        <div id="page-path">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="shoe-detail" class="py-md-5">
+    <div class="container">
+      <div class="content">
+        <div class="content_left">
+          <div id="shoe-image">
+            <div class="icon">
+              <a class="lighting" data-thumb="./asset/img/banner_shoes3.png" data-fancybox
+                href="./asset/img/banner_shoes3.png">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content_right" id="shoe-info">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- collection -->
+  <section id="info-board">
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-b1" type="button"
+            role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-b2" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">Review</button>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-b1" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="container-sm">
+            <div class="description" id="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="tab-pane fade" id="nav-b2" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class="container-sm">
+            <div class="introText">
+              <span>Some Test Here</span>
+            </div>
+            <div class="">
+              <label for="" class="form-label">Name *</label>
+              <input type="text" class="form-control" name="" id="hoTen" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="">
+              <label for="" class="form-label">Email *</label>
+              <input type="text" class="form-control" name="" id="kw" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="comment-form-rating"><label for="rating">Your rating&nbsp;<span
+                  class="required">*</span></label>
+     
+            </div>
+              <div class="mb-3">
+                <label for="" class="form-label"> Review *</label>
+                <textarea class="form-control" name="" id="" rows="3"></textarea>
+              </div>
+            <button id="" class="btn btn-primary"> Submit </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="best-seller" class="popular">
+    <div class="container">
+      <h4>
+        Best Seller
+      </h4>
+      <p>
+        Exclusive products have just arrived. Check them out        
+      </p>
+      <div class="best-seller product_list row" id="best-seller-list"></div>
+    </div>
+  </section>
+
+   <!-- footer -->
+   <footer>
+    <div class="container">
+      <div class="footer_content row">
+        <div class="col-3">
+          <a href="./index.html"
+            ><img
+              src="../../asset/img/sized-logo-white-01.png"
+              alt="sized-logo-white-01"
+          /></a>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+          <div class="social_icon">
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com/"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-3">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Our
+                Company</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span>
+                History</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span>
+                Contact</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Jobs</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Store
+                Locations</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Our Store</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Athletic
+                Shoes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Ballet
+                Flats</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Boat
+                Shoes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Brogue
+                Shoes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Sneaker
+                Store</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Useful Links</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Privacy
+                Policy</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span>
+                Returns</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Terms &
+                Conditions</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Contact
+                Us</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-solid fa-caret-right"></i></span> Latest
+                News</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="copyright_content row">
+          <div class="col-6 copyright_left">
+            Copyright © 2022 Shoe Store. All Right Reserved.
+          </div>
+          <div class="col-6 copyright_right">
+            <a href="#">Legal Information</a>
+            <a href="#">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+    integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- Axios -->
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- Fancy Box -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../../asset/js/zoomeView.js"></script>
+  <script src="../controller/detail.js"></script>
+
+</body>
+
+</html>
