@@ -55,7 +55,7 @@ document.getElementById("signUp_form").onsubmit = function () {
       ).innerHTML = `<div class="container" id="successful">
       <i class="fa-solid fa-circle-check logo" style="color: #2fa242;"></i>
       <h2 style="color: #2fa242;"> Register Successfully!!!</h2>
-      <a class="btn btn-primary" href="index.html">Back to Home</a>
+      <a class="btn btn-primary" href="../../index.html">Back to Home</a>
       </div>`;
     })
     .catch(function (err) {
