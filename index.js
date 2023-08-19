@@ -53,7 +53,7 @@ function renderUI(arrProduct, length) {
   for (let i = 0; i < length; i++) {
     var product = arrProduct[i];
     content += `
-        <div class="product_item col-3">
+        <div class="product_item col-lg-3 col-md-6 col-12">
             <img src="${product.image}"/>
             <div class="product_icon">
                 ${

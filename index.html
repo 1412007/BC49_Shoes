@@ -57,65 +57,84 @@
               <button
                 class="navbar-toggler"
                 type="button"
-                data-bs-toggle="collapse"
+                data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
+                aria-controls="offcanvasNavbar"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="./index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Athletic shoes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">New Arrivals</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Faq's</a></li>
-                      <li><a class="dropdown-item" href="#">My account</a></li>
-                      <li><a class="dropdown-item" href="#">Checkout</a></li>
-                      <li><a class="dropdown-item" href="#">Cart</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
+              <!-- <a class="navbar-brand logo" href="./index.html">
+                <img src="./asset/img/sized-logo-01.png" alt="sized-logo-01" />
+              </a> -->
+              <div
+                class="offcanvas offcanvas-end"
+                id="navbarSupportedContent"
+                tabindex="-1"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Athletic shoes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Faq's</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">My account</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Checkout</a></li>
+                        <li><a class="dropdown-item" href="#">Cart</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </nav>
-          <div class="icon_menu row">
+          <!-- <div class="icon_menu row">
             <i class="fa-solid fa-magnifying-glass col-4 btn"></i>
             <i class="fa-solid fa-cart-shopping col-4 btn"></i>
             <p class="price col-4">$0.00</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
@@ -251,7 +270,7 @@
       <div class="container">
         <div class="collection_content row">
           <div
-            class="col-6 wow animate__ animate__ animate__fadeInLeft animated animated"
+            class="col-lg-6 col-sm-12 col-12 content-left wow animate__ animate__ animate__fadeInLeft animated animated"
             data-wow-duration="2s"
             style="
               visibility: visible;
@@ -262,7 +281,7 @@
             <img src="./asset/img/New-Project-5.jpg" alt="New-Project-5" />
           </div>
           <div
-            class="col-6 content_right wow animate__ animate__ animate__fadeInRight animated animated"
+            class="col-lg-6 col-sm-12 col-12 content_right wow animate__ animate__ animate__fadeInRight animated animated"
             data-wow-duration="2s"
             style="
               visibility: visible;
@@ -312,7 +331,7 @@
               animation-name: fadeInUp;
             "
           >
-            <div class="col-6 limited_title">
+            <div class="col-lg-6 col-md-12 col-12 limited_title">
               <p class="subtitle mb-0">LIMITED TIME OFFER</p>
               <h2 class="title mb-3">NEW 2022 COLLECTION</h2>
               <div>
@@ -334,10 +353,10 @@
               animation-name: fadeInUp;
             "
           >
-            <div class="about_img col-5">
+            <div class="about_img col-lg-5 col-md-12 col-12">
               <img src="./asset/img/New-Project-13.jpg" alt="New-Project-13" />
             </div>
-            <div class="about_title col-7">
+            <div class="about_title col-lg-7 col-md-12 col-12">
               <div class="title_content">
                 <h2 class="title mb-3">ABOUT US</h2>
                 <p class="description">
@@ -420,7 +439,7 @@
     <footer>
       <div class="container">
         <div class="footer_content row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12">
             <a href="./index.html"
               ><img
                 src="./asset/img/sized-logo-white-01.png"
@@ -444,7 +463,7 @@
               ></a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12">
             <h4>Quick Links</h4>
             <ul>
               <li>
@@ -478,7 +497,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 mt-md-2 mt-lg-0 col-12">
             <h4>Our Store</h4>
             <ul>
               <li>
@@ -513,7 +532,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 mt-md-2 mt-lg-0 col-12">
             <h4>Useful Links</h4>
             <ul>
               <li>
@@ -553,10 +572,10 @@
       <div class="copyright">
         <div class="container">
           <div class="copyright_content row">
-            <div class="col-6 copyright_left">
+            <div class="col-md-6 col-lg-6 col-12 copyright_left">
               Copyright © 2022 Shoe Store. All Right Reserved.
             </div>
-            <div class="col-6 copyright_right">
+            <div class="col-md-6 col-lg-6 col-12 copyright_right">
               <a href="#">Legal Information</a>
               <a href="#">Privacy policy</a>
             </div>
