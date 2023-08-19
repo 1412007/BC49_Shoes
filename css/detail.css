@@ -125,7 +125,8 @@ header .header_content .icon_menu .price {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #shoe-detail .content .content_left #shoe-image:hover {
   background-size: 160%;
@@ -231,6 +232,19 @@ header .header_content .icon_menu .price {
 }
 #shoe-detail .content .content_right .feedback i {
   color: red;
+}
+@media only screen and (max-width: 576px) {
+  #shoe-detail .content {
+    display: block;
+  }
+  #shoe-detail .content .content_left {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #shoe-detail .content .content_right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 #info-board div #nav-tab {
@@ -368,6 +382,14 @@ header .header_content .icon_menu .price {
   transform: translateX(-20px);
   transition: all 0.5s;
   transition-delay: 0.2s;
+}
+@media only screen and (max-width: 576px) {
+  #best-seller div .product_list {
+    max-width: none;
+  }
+  #best-seller div .product_list .product_item {
+    width: 100%;
+  }
 }
 
 .sidebar {

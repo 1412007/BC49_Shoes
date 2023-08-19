@@ -54,7 +54,9 @@ function renderUI(arrProduct, length) {
     var product = arrProduct[i];
     content += `
         <div class="product_item col-lg-3 col-md-6 col-12">
-            <img src="${product.image}"/>
+            <a href="./detailPage/view/detail.html?productId=${
+              product.id
+            }"><img src="${product.image}"/></a>
             <div class="product_icon">
                 ${
                   product.feature == true
@@ -67,7 +69,9 @@ function renderUI(arrProduct, length) {
                     <i class="fa-solid fa-magnifying-glass btn" data-toggle="tooltip" data-placement="top" title="View"></i>
                 </div>
             </div>
-            <h4><a href="./detailPage/view/detail.html?productId=${product.id}">${product.name}</a></h4>
+            <h4><a href="./detailPage/view/detail.html?productId=${
+              product.id
+            }">${product.name}</a></h4>
             <p>$${product.price}</p>
         </div>
         `;

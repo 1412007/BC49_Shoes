@@ -19,6 +19,11 @@ $fs-28: 28px;
 $fs-14: 14px;
 $fs-h1: 46px;
 
+// responsive
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+
 //Mixin
 @mixin styleTitle() {
   font-weight: $fw-semiBold;
@@ -27,6 +32,26 @@ $fs-h1: 46px;
 }
 
 @mixin styleTextTitle($fontSize, $fontWeight) {
+}
+
+@mixin Responsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (min-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (min-width: $LG) {
+      @content;
+    }
+  }
 }
 
 ul {
@@ -169,7 +194,8 @@ header {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         // background-attachment: fixed;
         &:hover {
           background-size: 160%;
@@ -289,35 +315,43 @@ header {
         }
       }
     }
+    @include Responsive(XS) {
+      display: block;
+      .content_left {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .content_right {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
-
-#info-board{
-
+#info-board {
   div {
     #nav-tab {
-      border-top: 1px solid #b2b3b5ce;    
-      border-right: 1px solid #b2b3b5ce; 
-      border-left: 1px solid #b2b3b5ce;     
+      border-top: 1px solid #b2b3b5ce;
+      border-right: 1px solid #b2b3b5ce;
+      border-left: 1px solid #b2b3b5ce;
       button {
         padding: 20px;
         border: none;
         border-radius: 0;
         color: black;
 
-        &.active{
+        &.active {
           color: $color-orange;
-          border-bottom: 2px solid $color-orange;     
+          border-bottom: 2px solid $color-orange;
         }
       }
     }
 
-    .tab-content{  
-        border: 1px solid #b2b3b5ce;
-        padding: 20px;
+    .tab-content {
+      border: 1px solid #b2b3b5ce;
+      padding: 20px;
     }
-
   }
 
   .btn {
@@ -333,33 +367,31 @@ header {
   }
 }
 
-.rating{
-    display: inline-block;
-    input {
-        display: none;
-    }
+.rating {
+  display: inline-block;
+  input {
+    display: none;
+  }
 
-   label {
+  label {
     cursor: pointer;
     width: 30px;
     height: 30px;
-    background-image: url('path-to-star-icon.png'); /* Replace with your star icon image */
+    background-image: url("path-to-star-icon.png"); /* Replace with your star icon image */
     background-size: cover;
     margin: 0;
-}
+  }
 
-    input:checked ~ label {
-    background-image: url('path-to-filled-star-icon.png'); /* Replace with your filled star icon image */
-} 
+  input:checked ~ label {
+    background-image: url("path-to-filled-star-icon.png"); /* Replace with your filled star icon image */
+  }
 }
-
 
 #best-seller {
   margin: 80px 0px;
   text-align: center;
 
   div {
-  
     h4 {
       font-size: $fs-28;
     }
@@ -456,6 +488,16 @@ header {
       }
     }
   }
+  @include Responsive(XS) {
+    div {
+      .product_list {
+        max-width: none;
+        .product_item {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .sidebar {
@@ -488,14 +530,13 @@ header {
       color: white;
       font-size: 20px;
     }
-
   }
 
   &.active {
     right: 0;
   }
 
-  #item-list{
+  #item-list {
     margin-top: 20px;
   }
 }
@@ -514,7 +555,6 @@ header {
 .active ~ .backdrop {
   display: block;
 }
-
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

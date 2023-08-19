@@ -6,23 +6,25 @@ window.onload = function () {
 };
 
 function generatePage() {
-
   var promise = axios({
     method: "GET",
     url: "https://shop.cyberlearn.vn/api/Product/getbyid",
     params: { id: this.productId },
   })
-    .then(function (result) {  
-      document.getElementById("page-path").innerHTML = generatePath(result.data.content);
+    .then(function (result) {
+      document.getElementById("page-path").innerHTML = generatePath(
+        result.data.content
+      );
       // Image Content
       var shoeImage = document.getElementById("shoe-image");
       shoeImage.style.backgroundImage = `url('${result.data.content.image}')`;
       //Shoe Info
-      document.getElementById("shoe-info").innerHTML = generateShoeInfo(result.data.content);
-      //Best Seller - Related product
-      document.getElementById("best-seller-list").innerHTML = generateBestSeller(
+      document.getElementById("shoe-info").innerHTML = generateShoeInfo(
         result.data.content
       );
+      //Best Seller - Related product
+      document.getElementById("best-seller-list").innerHTML =
+        generateBestSeller(result.data.content);
     })
     .catch(function (err) {
       console.log(err);
@@ -101,11 +103,11 @@ function generateCategories(product) {
 }
 
 function generateBestSeller(product) {
-    var content = "";
-    for (let i = 0; i < product.relatedProducts.length; i++) {
-      var relatedProduct = product.relatedProducts[i];
-      content += `
-          <div class="product_item col-3">
+  var content = "";
+  for (let i = 0; i < product.relatedProducts.length; i++) {
+    var relatedProduct = product.relatedProducts[i];
+    content += `
+          <div class="product_item col-12 col-lg-3 col-md-3">
             <div class="image">
                 <img src="${relatedProduct.image}"/>
             </div>
@@ -121,16 +123,18 @@ function generateBestSeller(product) {
                       <i class="fa-solid fa-magnifying-glass btn" data-toggle="tooltip" data-placement="top" title="View"></i>
                   </div>
               </div>
-              <h4><a href="?productId=${relatedProduct.id}">${relatedProduct.name}</a></h4>
+              <h4><a href="?productId=${relatedProduct.id}">${
+      relatedProduct.name
+    }</a></h4>
               <p>$${relatedProduct.price}</p>
           </div>
           `;
-    }
-    return content;
+  }
+  return content;
 }
 
 function generatePath(product) {
-    var content = `
+  var content = `
     <ul class="list-group list-group-horizontal list-group-item-dark">
     <li class="list-group-item first-item" href="#" >
           <a class="nav-link" href="./../../index.html">Home</a>
@@ -138,13 +142,14 @@ function generatePath(product) {
     <li class="list-group-item">Shop</li>
     <li class="list-group-item">${product.name}</li>
     </ul>`;
- 
-    return content;
+
+  return content;
 }
 
 function toggleSidebar() {
-    var sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('active');
-    document.getElementById('toggleSidebar').addEventListener('click', toggleSidebar);
-
+  var sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+  document
+    .getElementById("toggleSidebar")
+    .addEventListener("click", toggleSidebar);
 }
