@@ -69,7 +69,7 @@ function generateShoeInfo(product) {
             </div>
             <div class="controller">
                 <div class="quantity">
-                <input type="number" class="form-control" id="numberInput" min="0" max="100" step="1">
+                <input type="number" class="form-control" id="numberInput" value = "0" min="0" max="100" step="1">
                 <div class="buttons">
                     <button type="button" class="btn btn-primary">+</button>
                     <button type="button" class="btn btn-primary">-</button>
@@ -140,4 +140,11 @@ function generatePath(product) {
     </ul>`;
  
     return content;
+}
+
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+    document.getElementById('toggleSidebar').addEventListener('click', toggleSidebar);
+
 }

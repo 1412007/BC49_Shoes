@@ -39,26 +39,15 @@
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./../../index.html"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="./../../index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Athletic shoes</a>
@@ -73,13 +62,8 @@
                   <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Pages
                   </a>
                   <ul class="dropdown-menu">
@@ -98,7 +82,7 @@
         </nav>
         <div class="icon_menu row">
           <i class="fa-solid fa-magnifying-glass col-4 btn"></i>
-          <i class="fa-solid fa-cart-shopping col-4 btn"></i>
+          <i id="cart" class="fa-solid fa-cart-shopping col-4 btn"></i>
           <p class="price col-4">$0.00</p>
         </div>
       </div>
@@ -148,7 +132,8 @@
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-b1" role="tabpanel" aria-labelledby="nav-home-tab">
           <div class="container-sm">
-            <div class="description" id="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            <div class="description" id="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis
               egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
               amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
           </div>
@@ -162,99 +147,91 @@
             </div>
             <div class="">
               <label for="" class="form-label">Name *</label>
-              <input type="text" class="form-control" name="" id="hoTen" aria-describedby="helpId" placeholder="">
+              <input type="text" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="">
             </div>
             <div class="">
               <label for="" class="form-label">Email *</label>
-              <input type="text" class="form-control" name="" id="kw" aria-describedby="helpId" placeholder="">
+              <input type="text" class="form-control" name="" id="email" aria-describedby="helpId" placeholder="">
             </div>
             <div class="comment-form-rating"><label for="rating">Your rating&nbsp;<span
                   class="required">*</span></label>
-     
+
             </div>
-              <div class="mb-3">
-                <label for="" class="form-label"> Review *</label>
-                <textarea class="form-control" name="" id="" rows="3"></textarea>
-              </div>
+            <div class="mb-3">
+              <label for="" class="form-label"> Review *</label>
+              <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
             <button id="" class="btn btn-primary"> Submit </button>
-            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
   <section id="best-seller" class="popular">
     <div class="container">
       <h4>
-        Best Seller
+        Related Product
       </h4>
       <p>
-        Exclusive products have just arrived. Check them out        
+        Exclusive products have just arrived. Check them out
       </p>
       <div class="best-seller product_list row" id="best-seller-list"></div>
     </div>
   </section>
 
-   <!-- footer -->
-   <footer>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="title">
+        <h3>Shopping Cart</h3>
+        <p>You Have 0 Items In Your Cart</p>
+      </div>
+      <a class="btn" id="closeSidebar" style="writing-mode: vertical-lr; transform: rotate(180deg);"> Close </a>
+    </div>
+    <div id="item-list">
+      <p>No products in the cart.</p>
+    </div>
+  </div>
+  <div class="backdrop"></div>
+
+  <!-- footer -->
+  <footer>
     <div class="container">
       <div class="footer_content row">
         <div class="col-3">
-          <a href="./index.html"
-            ><img
-              src="../../asset/img/sized-logo-white-01.png"
-              alt="sized-logo-white-01"
-          /></a>
+          <a href="./index.html"><img src="../../asset/img/sized-logo-white-01.png" alt="sized-logo-white-01" /></a>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
           </p>
           <div class="social_icon">
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-square-facebook"></i
-            ></a>
-            <a href="https://twitter.com/"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="https://www.google.com/"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="https://www.youtube.com/"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="col-3">
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Our
-                Company</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Our
+                Company</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span>
-                History</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>
+                History</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span>
-                Contact</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>
+                Contact</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Jobs</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Jobs</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Store
-                Locations</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Store
+                Locations</a>
             </li>
           </ul>
         </div>
@@ -262,34 +239,24 @@
           <h4>Our Store</h4>
           <ul>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Athletic
-                Shoes</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Athletic
+                Shoes</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Ballet
-                Flats</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Ballet
+                Flats</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Boat
-                Shoes</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Boat
+                Shoes</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Brogue
-                Shoes</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Brogue
+                Shoes</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Sneaker
-                Store</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Sneaker
+                Store</a>
             </li>
           </ul>
         </div>
@@ -297,34 +264,24 @@
           <h4>Useful Links</h4>
           <ul>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Privacy
-                Policy</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Privacy
+                Policy</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span>
-                Returns</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>
+                Returns</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Terms &
-                Conditions</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Terms &
+                Conditions</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Contact
-                Us</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Contact
+                Us</a>
             </li>
             <li>
-              <a href="#"
-                ><span><i class="fa-solid fa-caret-right"></i></span> Latest
-                News</a
-              >
+              <a href="#"><span><i class="fa-solid fa-caret-right"></i></span> Latest
+                News</a>
             </li>
           </ul>
         </div>
@@ -345,6 +302,15 @@
     </div>
   </footer>
 
+  <script>
+    document.getElementById('cart').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.toggle('active');
+    });
+
+    document.getElementById('closeSidebar').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.remove('active');
+    });
+  </script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -360,14 +326,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
     integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <!-- Axios -->
-  <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
-      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-  ></script>
+
+  <!-- Axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Fancy Box -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
