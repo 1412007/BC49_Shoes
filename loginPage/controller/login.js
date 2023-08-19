@@ -35,7 +35,6 @@ document.getElementById("signUp_form").onsubmit = function () {
   let phone = document.getElementById("phoneNumber").value;
   let gender = document.getElementById("male").checked;
 
-
   let user = {};
   user["email"] = email;
   user["password"] = password;
@@ -51,15 +50,16 @@ document.getElementById("signUp_form").onsubmit = function () {
   })
     .then(function (result) {
       console.log(result);
-      document.getElementById("nav-tabContent").innerHTML =
-      `<div class="container" id="successful">
+      document.getElementById(
+        "nav-tabContent"
+      ).innerHTML = `<div class="container" id="successful">
       <i class="fa-solid fa-circle-check logo" style="color: #2fa242;"></i>
       <h2 style="color: #2fa242;"> Register Successfully!!!</h2>
       <a class="btn btn-primary" href="index.html">Back to Home</a>
-      </div>`
+      </div>`;
     })
     .catch(function (err) {
-      alert(err.response.data.message)
+      alert(err.response.data.message);
       if (err.response.status == 400) {
         document.getElementById("error").innerHTML =
           "Username or password is invalid";

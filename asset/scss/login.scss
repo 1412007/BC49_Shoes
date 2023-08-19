@@ -63,7 +63,7 @@ body {
   }
   .welcome {
     background-image: url(../../asset/img/best-running-shoe-brands-.png);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,13 +73,8 @@ body {
     justify-content: center;
     padding-right: 0;
     overflow: hidden;
-
-    &::before {
-
-    }
-    
     nav {
-      div{
+      div {
         border: none;
         display: flex;
         flex-direction: column;
@@ -90,12 +85,13 @@ body {
       }
     }
     button {
-      font-weight: bold;        
-      background-color: rgba(255, 255, 255, 0.774);
+      font-weight: bold;
       padding: 5px 30px;
       border-radius: 25px;
+      background-color: rgba(255, 255, 255, 0.774);
       transform: translateX(20px);
       color: black;
+      margin-bottom: 10px;
       &.active {
         color: #ff7f00;
         background-color: rgba(255, 255, 255, 0.774);
@@ -171,7 +167,7 @@ body {
           }
         }
       }
-      #genderSelect{
+      #genderSelect {
         display: flex;
         div {
           margin: 10px;
@@ -205,7 +201,7 @@ body {
     #error {
       color: red;
     }
-    .signup_link {
+    .link {
       a {
         text-decoration: none;
         color: #111111;
@@ -239,7 +235,7 @@ body {
           font-size: 16px;
         }
       }
-      .signup_link {
+      .link {
         a {
           display: block;
         }
