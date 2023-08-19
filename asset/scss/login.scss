@@ -53,7 +53,7 @@ body {
 .login_content {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 20px;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   transform: translateY(40%);
   @include Responsive(XS) {
@@ -90,13 +90,18 @@ body {
       }
     }
     button {
-      color: #ff7f00;
-      font-weight: bold;
+      font-weight: bold;        
+      background-color: rgba(255, 255, 255, 0.774);
+      padding: 5px 30px;
+      border-radius: 25px;
+      transform: translateX(20px);
+      color: black;
       &.active {
-        background-color: rgba(255, 255, 255, 0.5);
+        color: #ff7f00;
+        background-color: rgba(255, 255, 255, 0.774);
         border-radius: 25px;
-        padding: 10px 30px;
-        transform: translateX(20px);
+        padding: 5px 30px;
+        transform: translateX(40px);
         border: none;
       }
     }
@@ -108,6 +113,12 @@ body {
     width: 50%;
     padding: 60px 70px;
     background-color: white;
+
+    #successful {
+      text-align: center;
+      font-size: 40px;
+    }
+
     .logo {
       text-align: center;
     }
@@ -158,6 +169,12 @@ body {
           &:hover {
             color: #ff7f00;
           }
+        }
+      }
+      #genderSelect{
+        display: flex;
+        div {
+          margin: 10px;
         }
       }
     }
